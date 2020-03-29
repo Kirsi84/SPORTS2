@@ -41,7 +41,7 @@ function callFunctions($mode, $param)
             $tietokanta = "sports";
 
             // Turn off all error reporting
-           // error_reporting(0); // in production not showing 
+            error_reporting(0); // in production not showing 
         }
         else {
             $palvelin   = "localhost";
@@ -54,7 +54,7 @@ function callFunctions($mode, $param)
 
         }
 
-        log_writing("Server: " . $palvelin . " Database: " .  $tietokanta); // just testing
+        //log_writing("Server: " . $palvelin . " Database: " .  $tietokanta); // just testing
 
         $con = mysqli_connect($palvelin, $kayttaja, $salasana, $tietokanta);
     
@@ -66,6 +66,9 @@ function callFunctions($mode, $param)
             show_user_error("Virhe tietokantakäsittelyssä. Kokeile hetken kuluttua uudelleen.");
 
             // exit;
+        }
+        else {
+            log_writing("db connection succeeded");
         }
 
         switch ($mode)
