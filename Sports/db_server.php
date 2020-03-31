@@ -14,7 +14,7 @@ echo "<div id=\"navbar\">";
     echo "<a href=\"members.php\">Seurojen jäsentiedot</a>\n";
    
     echo "<a href=\"users\change_passwd_form.php\">Muuta salasana</a>\n";
-    echo "<a href=\"users\logout.php\">Logout</a>\n";
+    echo "<a href=\"users\logout.php\">Kirjaudu ulos</a>\n";
     echo "<a href=\"#usertxt\">" .  htmlspecialchars($usertxt) . "</a>\n";
  
 echo "</div>";
@@ -67,9 +67,9 @@ function callFunctions($mode, $param)
 
             // exit;
         }
-        else {
-            log_writing("db connection succeeded");
-        }
+        // else {
+        //     log_writing("db connection succeeded");
+        // }
 
         switch ($mode)
         {
@@ -133,7 +133,7 @@ function callFunctions($mode, $param)
 
 #region errors
 
-// log_writin
+// log_writin by UTC-time 
 function log_writing($msg) {       
     $date_utc = new \DateTime("now", new \DateTimeZone("UTC")); //UTC-time is used
      

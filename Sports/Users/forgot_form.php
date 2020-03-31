@@ -1,6 +1,6 @@
 <?php
  require_once('bookmark_fns.php');
- do_html_header('Reset password');
+ do_html_header('Salasanan resetointi');
  
  display_forgot_form();
 

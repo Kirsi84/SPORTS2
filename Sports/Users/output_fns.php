@@ -67,21 +67,21 @@ function display_site_info() {
 
 function display_login_form() {
 ?>
-  <p><a href="register_form.php">Not a member?</a></p>
+  <p><a href="register_form.php">Rekisteröidy</a></p>
   <form method="post" action="member.php"> 
   <!-- <form method="post" action="/sports/index.php"> KIR-->
   <div class="formblock">
-    <h2>Members Log In Here</h2>
+    <h2>Kirjaudu sisään</h2>
 
-    <p><label for="username">Username:</label><br/>
+    <p><label for="username">Käyttäjänimi:</label><br/>
     <input type="text" name="username" id="username" /></p>
 
-    <p><label for="passwd">Password:</label><br/>
+    <p><label for="passwd">Salasana:</label><br/>
     <input type="password" name="passwd" id="passwd" /></p>
 
-    <button type="submit">Log In</button>
+    <button type="submit">Kirjaudu</button>
 
-    <p><a href="forgot_form.php">Forgot your password?</a></p>
+    <p><a href="forgot_form.php">Unohtuiko salasana?</a></p>
   </div>
 
  </form>
@@ -93,26 +93,26 @@ function display_registration_form() {
  <form method="post" action="register_new.php">
 
  <div class="formblock">
-    <h2>Register Now</h2>
+    <h2>Kirjautumistiedot</h2>
 
-    <p><label for="email">Email Address:</label><br/>
+    <p><label for="email">Sähköpostiosoite:</label><br/>
     <input type="email" name="email" id="email" 
       size="30" maxlength="100" required /></p>
 
-    <p><label for="username">Preferred Username <br>(max 16 chars):</label><br/>
+    <p><label for="username">Käyttäjänimi <br>(max 16 merkkiä):</label><br/>
     <input type="text" name="username" id="username" 
       size="16" maxlength="16" required /></p>
 
-    <p><label for="passwd">Password <br>(between 6 and 16 chars):</label><br/>
+    <p><label for="passwd">Salasana <br>(6-16 merkkiä:</label><br/>
     <input type="password" name="passwd" id="passwd" 
       size="16" maxlength="16" required /></p>
 
-    <p><label for="passwd2">Confirm Password:</label><br/>
+    <p><label for="passwd2">Salasana uudelleen:</label><br/>
     <input type="password" name="passwd2" id="passwd2" 
       size="16" maxlength="16" required /></p>
 
 
-    <button type="submit">Register</button>
+    <button type="submit">Rekisteröidy</button>
 
    </div>
 
@@ -213,22 +213,22 @@ function display_password_form() {
    <form action="change_passwd.php" method="post">
 
  <div class="formblock">
-    <h2>Change Password</h2>
+    <h2>Muuta salasana</h2>
 
-    <p><label for="old_passwd">Old Password:</label><br/>
+    <p><label for="old_passwd">Vanha salasana:</label><br/>
     <input type="password" name="old_passwd" id="old_passwd" 
       size="16" maxlength="16" required /></p>
 
-    <p><label for="passwd2">New Password:</label><br/>
+    <p><label for="passwd2">Uusi salasana:</label><br/>
     <input type="password" name="new_passwd" id="new_passwd" 
       size="16" maxlength="16" required /></p>
 
-    <p><label for="passwd2">Repeat New Password:</label><br/>
+    <p><label for="passwd2">Salasana uudelleen:</label><br/>
     <input type="password" name="new_passwd2" id="new_passwd2" 
       size="16" maxlength="16" required /></p>
 
 
-    <button type="submit">Change Password</button>
+    <button type="submit">Muuta salasana</button>
 
    </div>
    <br>
@@ -242,13 +242,13 @@ function display_forgot_form() {
    <form action="forgot_passwd.php" method="post">
 
  <div class="formblock">
-    <h2>Forgot Your Password?</h2>
+    <h2>Unohtuiko salasana?</h2>
 
-    <p><label for="username">Enter Your Username:</label><br/>
+    <p><label for="username">Kirjoita käyttäjätunnuksesi:</label><br/>
     <input type="text" name="username" id="username" 
       size="16" maxlength="16" required /></p>
 
-    <button type="submit">Change Password</button>
+    <button type="submit">Muuta salasana</button>
 
    </div>
    <br>

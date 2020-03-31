@@ -1,7 +1,7 @@
 <?php
  require_once('bookmark_fns.php');
  session_start();
- do_html_header('Change password');
+ do_html_header('Muuta salasana');
  check_valid_user();
  
  display_password_form();

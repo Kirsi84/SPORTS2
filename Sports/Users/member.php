@@ -27,10 +27,10 @@ if ($username && $passwd) {
   }
   catch(Exception $e)  {
     // unsuccessful login
-    do_html_header('Problem:');
-    echo 'You could not be logged in.<br>
-          You must be logged in to view this page.';
-    do_html_url('login.php', 'Login');
+    do_html_header('Virhe:');
+    echo 'Et päässyt kirjautumaan sisään.<br>
+          Yritä kirjautua uudelleen.';
+    do_html_url('login.php', 'Kirjaudu');
     do_html_footer();
     exit;
   }
