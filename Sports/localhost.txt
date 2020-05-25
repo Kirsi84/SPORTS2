@@ -1,1 +1,11 @@
-http://localhost/sports/users/login.php
+
+http://localhost/users/login.php
+
+http://localhost/images/football.png
+
+
+xamp:
+=====
+
+DocumentRoot "C:/xampp/htdocs/sports2/sports"
+<Directory "C:/xampp/htdocs/sports2/sports">

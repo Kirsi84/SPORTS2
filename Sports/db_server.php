@@ -11,7 +11,7 @@ $usertxt = check_valid_user();
 
 echo "<div id=\"navbar\">";
    
-    echo "<a href=\"index.php\"><img src=\"\sports\\images\\football.png\" alt=\"Football\" weight=\"19\" height=\"19\"</a>\n"; 
+    echo "<a href=\"index.php\"><img src=\"\images\\football.png\" alt=\"Football\" weight=\"19\" height=\"19\"</a>\n"; 
     echo "<a href=\"createClub.php\">Lisää seura</a>\n";
     echo "<a href=\"members.php\">Seurojen jäsentiedot</a>\n";
    
