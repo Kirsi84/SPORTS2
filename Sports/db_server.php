@@ -4,7 +4,9 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-require('checkUser.php');
+require 'checkUser.php';
+require 'dbcon-prod.php';
+
 $usertxt = check_valid_user();
 
 echo "<div id=\"navbar\">";
@@ -33,16 +35,20 @@ function callFunctions($mode, $param)
        
     try
     {
+        // production
         if (!$local )
         {
-            $palvelin   = "127.0.0.1:53181";
-            $kayttaja   = "azure";  // tämä on tietokannan käyttäjä, ei tekemäsi järjestelmän
-            $salasana   = "6#vWHD_$";
+            $palvelin = $prod_palvelin;
+            $kayttaja = $prod_kayttaja;
+            $salasana = $prod_salasana;
+    
             $tietokanta = "sports";
-
+               
             // Turn off all error reporting
             error_reporting(0); // in production not showing 
         }
+    
+        // test environment
         else {
             $palvelin   = "localhost";
             $kayttaja   = "root";  // tämä on tietokannan käyttäjä, ei tekemäsi järjestelmän
